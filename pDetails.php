@@ -29,7 +29,7 @@ include('config.php')
                   <th><?php echo $row['city'] ?></th>
                   <th><a href="edit.php?id=<?php echo $row['id'] ?>">
                     <input type="button" name="" value="edit"></a></th>
-                  <th><a href="delete.php?id=<?php echo $row['id'] ?>"><input type="button" name="" value="delete"></a></th>
+                  <th><a href="delete.php?id=<?php echo $row['id'] ?>" onclick="return confirm('Are you sure?')"><input type="button" name="" value="delete"></a></th>
                 </tr>
 <?php
     }
